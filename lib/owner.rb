@@ -5,8 +5,8 @@ class Owner
 
   @@Owner = []
 
-  def initialize(name)
-    @species = name
+  def initialize(species)
+    @species = species
     @Owner << self
     @pets = {fishes: [], cats: [], dogs: []}
   end
@@ -65,7 +65,7 @@ def sell_pets
   @pets.collect do |species, instances|
     instances.each do |animal|
       animal.mood = "nervous"
-  end
+    end
   instances.clear
 end
 end
