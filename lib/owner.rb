@@ -66,6 +66,7 @@ def sell_pets
     instances.each do |animal|
       animal.mood = "nervous"
   end
+end
   instances.clear
 end
 
